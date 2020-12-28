@@ -1,0 +1,178 @@
+/* general styles */
+
+body {
+	max-width: 1200px; 
+	margin: auto;
+	font-family: Tahoma;
+}
+
+.pageBody {
+	margin: 2em;
+	font-size: 1.5em;
+	text-align: justify;
+}
+
+h2 {
+	color: darkred;
+    font-size: 1.5em;
+    font-weight: bold;
+	font-family: Trebuchet MS, Narkisim, Lucida Sans, Comic Sans MS;
+}
+
+h3 {
+	color: darkred;
+    font-weight: bold;
+	font-family: Trebuchet MS, Narkisim, Lucida Sans, Comic Sans MS;
+}
+
+hr {
+	clear: both;
+	background-image: linear-gradient(to right, #dfb336, #f7de7f, #dfb336, #f7de7f, #dfb336);
+	height: 3px;
+	border-width: 0;
+	margin: 0 1px;
+}
+
+/* flex preset */
+
+.flexSpaceEvenly {
+	margin: 20px auto;
+	max-width: 950px;
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+
+/* header styles */
+
+#logo {float: left}
+
+#sloganContainer {
+	height: 158px;
+    width: calc(100% - 232px);
+    float: left;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+	text-align: right;
+}
+
+#slogan {
+	padding: 0 6px;
+    margin: 0 0 10px 0;
+	font-family: Monotype Corsiva, Tahoma;
+	font-size: 2em;
+	color: darkred;
+	font-weight: 500;
+}
+
+/* navigation pane styles */
+
+.navButton {
+	display: block;
+	width: calc(20% - 2px);
+	float: left;
+	margin: 0 1px;
+	padding: 1% 0;
+	background-color: darkred;
+	font-family: Maiandra GD, Tahoma;
+	font-size: 1.5em;
+	font-weight: 600;
+	color: white;
+	text-decoration: none;
+	text-align: center;
+} 
+
+.navButton:hover {
+	background-color: #700000;
+	border-color: #700000;
+	color: lightgray;
+}
+
+.navButton[href = "#"] {
+	background-color: #b88700;
+}
+
+#navicon {
+	text-align: right; 
+	padding-right: 10px; 
+	box-sizing: border-box;
+	display:none;
+}
+
+/* home-page styles (button styles) */
+
+.homeFlexButtons {
+	flex: 0 1 337px; 
+	margin: .3em;
+	height: 86px;
+	border-radius: 20px 20px;
+	outline: none;
+	background-repeat: no-repeat;
+	font-family: Berlin Sans FB, Tahoma;
+	font-size: 1em;
+}
+
+.homeFlexButtons:hover {
+	box-shadow: 0 0 5px 1px grey;
+	cursor: pointer;
+}
+
+#audioButton {
+	background-color: black;
+	background-image: url("music-gold-notes.png");
+    background-size: contain;
+	color: lightgrey;
+    text-align: right;
+    padding-right: 50px;
+}
+
+#bookButton {
+	background-image: url("singer.png"), radial-gradient(circle at 0%, #d9a616, #dfb336 40%, white);
+    background-size: contain, cover;
+	background-position: right, center;
+	text-align: left;
+	padding-left: 20px;
+	border-color: #dfb336;
+}
+
+/* sound-page styles */
+
+.soundFlexItem {
+	flex: 1 1 200px;
+	margin-bottom: 20px;
+	padding: 10px;
+	text-align: center;
+}
+
+audio {outline: none}
+
+/* testimonial-page styles */
+
+blockquote:before {
+    position: absolute;
+    top: 60px;
+    left: -40px;
+    content: '\201C';
+	z-index: -1;
+    color: #dfb336;
+    opacity: 0.3;
+    font-family: Times New Roman;
+    font-size: 15em;
+    font-weight: 600;
+}
+
+blockquote {
+    position: relative;
+	margin: 15px 35px;
+    flex: 0 1 300px;
+    font-family: Segoe Print;
+    line-height: 1.6em;
+    font-size: .7em;
+}
+
+/* contact-page styles */
+
+.contactLink {text-decoration: none}
+.contactLink h3 {width: max-content}
+.contactLink h3:hover {color: #dfb336}

@@ -1,0 +1,48 @@
+<!doctype HTML>
+<html>
+<head>
+	<meta name="viewport" content="width = device-width, initial-scale = 1.0">
+	<meta charset = 'UTF-8' >
+	<link rel = "stylesheet" href = "styles.css" />
+	<link rel = "stylesheet" href = "responsive.css" />
+	<title>Azamrah Orchestra - Home</title>
+	<script src = "https://code.jquery.com/jquery-3.5.1.js"></script>
+	<script src = "mobileNav.js" ></script>
+</head>
+
+<body>
+	<!-- page header -->
+	<header>
+		<img src = "logo.png" alt = "AZAMRAH ORCHESTRA" id = "logo" />
+		<div id = "sloganContainer" ><h5 id = "slogan" >
+			The <strong>BOLD</strong> sound of Jewish music in Chicago
+		</h5><div>
+	</header>
+	
+	<!-- navigation pane -->
+	<hr>
+	<nav>
+		<div id = "navicon" class = "navButton" >&#9776</div>
+		<a href = "#" class = "navButton" >Home</a>
+		<a href = "about.html" class = "navButton" >About Us</a>
+		<a href = "sounds.html" class = "navButton" >Sounds</a>
+		<a href = "testimonial.html" class = "navButton" >Testimonials</a>
+		<a href = "contact.html" class = "navButton" >Contact Us</a>
+	</nav>
+	<hr>
+	
+	<!-- page body - text describing Azamrah Orchestra -->
+	<section class = "pageBody" >
+		<p>Azamrah - the name says it all. The songs you want, the way you want them. No matter the size of the orchestra you choose, we will turn your simcha into a dream come true.</p>
+		<p>Wedding, Bar/Bas Mitzvah, Banquet, Sheva Brochos or any exciting event, the finest musicians will enhance your evening with our popular musical selections.</p>
+		<p>Call ...or email...and rest assured that our years of expertise will be put to good use creating a memorable event for you and your guests!</p>
+	</section>
+	
+	<!-- buttons for sound and email link -->
+	<section class = "pageBody flexSpaceEvenly" >
+		<button id = "audioButton" class = "homeFlexButtons" onclick = "location.href = 'sounds.html'">Click for Audio</button>
+		<button id = "bookButton" class = "homeFlexButtons" onclick = "window.open('mailto:info@azamrahorchestra.com')" >Book Azamrah<br/>Orchestra Now</button>
+	</section>
+	
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!doctype HTML>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset = 'UTF-8' >
+	<link rel = "stylesheet" href = "styles.css" />
+	<link rel = "stylesheet" href = "responsive.css" />
+	<title>Azamrah Orchestra - Sounds</title>
+	<script src = "https://code.jquery.com/jquery-3.5.1.js"></script>
+	<script src = "mobileNav.js" ></script>
+</head>
+
+<body>
+	<!-- page header -->
+	<header>
+		<img src = "logo.png" alt = "AZAMRAH ORCHESTRA" id = "logo" />
+		<div id = "sloganContainer" ><h5 id = "slogan" >
+			The <strong>BOLD</strong> sound of Jewish music in Chicago
+		</h5><div>
+	</header>
+	
+	<!-- navigation pane -->
+	<hr>
+	<nav>
+		<div id = "navicon" class = "navButton" >&#9776</div>
+		<a href = "home.html" class = "navButton" >Home</a>
+		<a href = "about.html" class = "navButton" >About Us</a>
+		<a href = "#" class = "navButton" >Sounds</a>
+		<a href = "testimonial.html" class = "navButton" >Testimonials</a>
+		<a href = "contact.html" class = "navButton" >Contact Us</a>
+	</nav>
+	<hr>
+	
+	<!-- sample music - a flexbox of h2/audio sets -->
+	<section class = "pageBody flexSpaceEvenly" >
+		<div class = "soundFlexItem" >
+			<h2>First Dance</h2>
+			<audio controls>
+				<source src="01-First-Dance.mp3" type="audio/mp3">
+				Your browser does not support this audio format.
+			</audio>
+		</div>
+		<div class = "soundFlexItem" >
+			<h2>Horah</h2>
+			<audio controls>
+				<source src="02-Horah.mp3" type="audio/mp3">
+				Your browser does not support this audio format.
+			</audio>
+		</div>
+		<div class = "soundFlexItem" >
+			<h2>Anovim</h2>
+			<audio controls>
+				<source src="03-Anovim.mp3" type="audio/mp3">
+				Your browser does not support this audio format.
+			</audio>
+		</div>
+		<div class = "soundFlexItem" >
+			<h2>Second Dance</h2>
+			<audio controls>
+				<source src="04-Second-Dance.mp3" type="audio/mp3">
+				Your browser does not support this audio format.
+			</audio>
+		</div>
+	</section>
+	
+</body>
+</html>
